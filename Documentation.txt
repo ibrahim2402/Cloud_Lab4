@@ -1,0 +1,57 @@
+
+To start with: User need to register with email and passpowrd to be to login either as admin or customer
+
+** Default Class
+
+   Login/Check if you are a customer otherwise cant proceed
+   Check Log out status
+   Get User role
+   Flight booking function
+   Car rental function
+   Checking required fields not to be empty
+   Get variables to calculate the price
+   Get payment and send to DB
+   Get values to calculate flight price
+   Get total price & display to user
+
+** Admin
+
+As an admin, it is required to register and login as an admin in order to access the admin priviledge.
+This class is used for administrative use: Admin can add data to the database tables, Update the tables
+Has a functrion that disable the button when user did not login as admin
+The admin can add more Routes and other services. It will be listed on home page in a route specifications
+
+** BlobHelper
+
+     Create connection and storage table/Blob if not exist
+     This class handle the blob User interface
+     Holds and initialize account name and storage key as storage credential to access azure storage account resources
+     Create the table for comments, blob upload/ load and list blob files
+     Upload/Load a blob to the cloud.
+      
+
+** DBHelper
+
+      This class implementation of  all functions: Airport, Airline, Carbooking, Flight
+      It calculate the price for distance and no of passenger.
+      Create connection & disposes it after finishing task
+      Open connection
+      Close connection
+
+** Register Class
+
+This class is used implemeted the role functions so that users can register as Admin or Customer
+This has to be done before proceeding to use the app
+
+** Models Folder
+
+It has all the entities class e.g Airline, Airport, Car booking, Car rental
+Comment, Flight, Route.
+
+** Local Database (MSSQLLocalDB)
+
+ I used SQL Server with local database connection for the management role
+ (Admin/Customer/Visitor set up and Database
+ Using the DBConnection string
+ Data connection is: DBConnection
+
